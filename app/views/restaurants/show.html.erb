@@ -1,0 +1,11 @@
+<h1><%= @restaurant.name %></h1>
+<p><%= @restaurant.address %></p>
+<p><%= @restaurant.phone_number %></p>
+
+<%= link_to "Create a new review", "/restaurants/#{@restaurant.id}/reviews/new" %>
+<br>
+<br>
+<%= link_to "See all reviews", "/restaurants/#{@restaurant.id}/reviews" %>
+<br>
+<br>
+<%= link_to "Go back to all restos!", "/restaurants"%>
